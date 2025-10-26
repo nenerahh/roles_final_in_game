@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="dove.png" type="png">
+  
+  <title>Invitation</title>
+</head>
+<body>
+  <div class="invite-container">
+    <div class="logo">
+      <img src="butterfly.png" width="100px" alt="Council Logo">
+    </div>
+    <h1>You've Been Summoned</h1>
+    <p>Enter your secret case code to reveal your role:</p>
+
+    <div class="code-input">
+      <input type="text" id="code" name="code" placeholder="Enter your code">
+      <button type="button" id="revealBtn">Reveal</button>
+    </div>
+
+    <h2>Your Role:</h2>
+    <p id="role_output"></p>
+
+    <div class="disclaimer">
+      <h3>Confidential Notice</h3>
+      <p>
+        This is a private council summons. Your assigned role is confidential and must not be shared with other delegates prior to the session. 
+        Your cooperation is crucial to reconstruct the lost treaty and uncover the truth behind the recent events. 
+        Every decision you make may alter the outcome. 
+        Remember: through conflict, recognition is born.
+      </p>
+    </div>
+
+    <p><strong>Date:</strong> October 26, 2025</p>
+    <p><strong>Time:</strong> 7:00 PM</p>
+    <p><strong>Dress Code:</strong> Dress Like Your role</p>
+  </div>
+<script src="script.js"></script>
+</body>

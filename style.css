@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=VT323&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'VT323', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.invite-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 15px;              
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+}
+
+.invite-container h1 {
+    font-size: 4em;
+}
+
+.invite-container h2 {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #cccccc;
+}
+
+.invite-container p {
+    line-height: 1.5;
+}
+
+
+.code-input {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 10px; 
+    width: 100%;
+}
+
+.code-input input {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    width: 60%;
+    max-width: 250px;
+    text-align: center;
+}
+
+.code-input button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #b30000;
+    color: #1e1e1e;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.code-input button:hover {
+    background: linear-gradient(135deg, #bb1313, #8d0808);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+}
+
+/* Small text */
+.invite-container small {
+    font-size: 0.8em;
+    color: #999;
+}
+
+
+@media (max-width: 600px) {
+    .invite-container h1 {
+        font-size: 2.5em; 
+    }
+
+    .invite-container h2 {
+        font-size: 1em;
+    }
+
+    .code-input input {
+        width: 90%;  
+        max-width: 200px;
+        font-size: 0.9em;
+    }
+
+    .code-input button {
+        width: 50%;
+        padding: 10px 0;
+        font-size: 0.9em;
+    }
+
+    body {
+        padding: 15px;
+    }
+}
